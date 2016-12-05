@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/scrolling-nav" />
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="js/scrolling-nav.js"></script>
+		<script>
+			$(document).ready(function(){
+			  // Add smooth scrolling to all links
+			  $("a").on('click', function(event) {
+			 
+				// Make sure this.hash has a value before overriding default behavior
+				if (this.hash !== "") {
+				  // Prevent default anchor click behavior
+				  event.preventDefault();
+			 
+				  // Store hash
+				  var hash = this.hash;
+			 
+				  // Using jQuery's animate() method to add smooth page scroll
+				  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+				  $('html, body').animate({
+					scrollTop: $(hash).offset().top
+				  }, 800, function(){
+			   
+					// Add hash (#) to URL when done scrolling (default click behavior)
+					window.location.hash = hash;
+				  });
+				} // End if
+			  });
+			});
+		</script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</head>
+	
+	<a id="page-top">
+	<body>
+		<!-- navbar -->
+		<nav class="navbar navbar-inverse" style="background-color:red">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed"
+						data-toggle="collapse" data-target="#myNav" aria-expanded="false" aria-controls="myNav">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="glyphicon glyphicon-menu-hamburger" style="color: #F05F40"></span>
+						<span class="menu" style="color: #F05F40">Menu</span>
+					</button>
+					<a class="navbar-brand" href="index.html">Matthew Norman Media</a>
+				</div>					
+					<div id="myNav" class="collapse navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li><a href="#about">About</a></li>							
+							<li><a href="#portfolio">Portfolio</a></li>
+							<li><a href="#contact">Contact</a></li>
+							<li><a href="resume/Norman_Resume.pdf">Resume</a></li>							
+						</ul>				
+					</div>
+					
+			</div>
+		</nav>
+	
+
+        <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+				<h4><em>Explore</em></h4>
+                <h1>Progressive Media Solutions</h1>
+                <hr>
+                <h3>I produce digital media for for business, documentary, and freelance. My practices emcompass video production, cartography, and photography.</h3>
+            </div>
+        </div>
+		</header>
+		
+		<a id="about">
+		</a>
+		<div class="jumbotron">
+			<div class="container-fluid text-center">				
+				<h2>About Me</h2>
+				<hr class="light">
+				<p class="text-faded">I am a senior at UW Madison studying Environmental Sciences and Digital Studies. Video production is my primary field, but I am also trained in cartography and photography. I have over six years of experience with Adobe Creative Cloud programs including Premiere Pro, After Effects, Speedgrade, Photoshop and Illustrator.</p>
+				
+				<p class="text-faded">I want combine my unique skillset with my passion and knowledge of the natural sciences to possitively impact the world socially and environmentally.</p>
+			</div>
+		</div>
+  
+		<a id="portfolio">	
+		<div class="container-fluid">
+			<div class="row">				
+				<div class="col-md-4 col-sm-6 col- xs-12 mycustomstylename">
+					<div class="embed-responsive embed-responsive-16by9">
+						<a href="project1.html">
+						<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/192838700" width="350" height="262.5" frameBorder="0" ></iframe>
+						</a>
+					</div>
+				</div>				
+				<div class="col-md-4 col-sm-6 col- xs-12 mycustomstylename">
+					<div class="embed-responsive embed-responsive-16by9">
+						<a href="project1.html">
+						<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/192841404" width="350" height="262.5" frameBorder="0" ></iframe>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col- xs-12 mycustomstylename">
+					<div class="embed-responsive embed-responsive-16by9">
+						<a href="project4.html">
+						<iframe class="embed-responsive-item" src="https://a.tiles.mapbox.com/v4/mcnorman.badf7b64.html?access_token=pk.eyJ1IjoibWNub3JtYW4iLCJhIjoiY2l1b2Y3cXo3MDFmZDJ2bXdyM3U5MXZ1ZyJ9.-95TrcEglBo1rBHuZ4Zf2A" width="500" height="262.5px" frameBorder="0" ></iframe>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col- xs-12 mycustomstylename">
+					<a href="https://a.tiles.mapbox.com/v4/mcnorman.badf7b64.html?access_token=pk.eyJ1IjoibWNub3JtYW4iLCJhIjoiY2l1b2Y3cXo3MDFmZDJ2bXdyM3U5MXZ1ZyJ9.-95TrcEglBo1rBHuZ4Zf2A" class="rollover2">					
+					<img src="images/whitman.jpg" class="img-responsive">
+					<span class="rollover1">Walt Whitman Museum Exhibitions</span> 
+					</a>
+				</div>				
+				<div class="col-md-4 col-sm-6 col- xs-12 mycustomstylename">
+					<a href="images/dem_1">					
+					<img src="images/dem_1.jpg" class="img-responsive">
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6 col- xs-12 mycustomstylename">
+					<a href="Hillshade.html" class="rollover2">					
+					<img src="images/bikemap.jpg" class="img-responsive">
+					<span class="rollover1">Noweigan Bike Tour Map</span> 
+					</a>
+				</div>				
+			</div>
+		</div>
+	
+		<a id="contact">
+		</a>		
+		<div class="jumbotron">
+			<div class="container-fluid text-center">
+				<h2>You can find me at...</h2>
+				<hr class="light">
+				<p><a href="mailto:your-email@your-domain.com">Email</a> | <a href="https://vimeo.com/mnorman968">Vimeo</a></p>
+			</div>
+		</div>
+		
+	</body>
+	
+	
